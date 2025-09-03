@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Bungee&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Gothic+Expanded+One&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fdf7e1;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+.container{
+    background-color: #9b59b6;
+    padding: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 1);
+    transition: all 0.5s ease-in-out;
+    margin-top: 150px;
+    margin-left: 300px;
+}
+.header{
+    display: block;
+    margin-bottom: 20px;
+}
+.header h4{
+    font-family: 'Bungee', cursive;
+    color: #fff;
+    font-size: 1.3rem;
+}
+#signInPage{
+    animation: fadein 0.5s;
+}
+@keyframes fadein{
+    from{
+        opacity:0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+form label{
+    margin-bottom: 20px;
+    font-style:'Poppins', sans-serif;
+}
+form input{
+    width:95% ;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #e67e22;
+    font-size: 16px;
+    transition: border 0.3s;
+    margin-bottom: 20px;
+}
+form input:focus{
+    border:#fdf7e1;
+}
+form button {
+    width: 75%;
+    padding: 12px;
+    margin-bottom: 20px;
+    color: #fff;
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    border-radius: 8px;
+    margin-left: 75px;
+
+}
+form button:hover{
+    background-color: #db7318;
+    transition: background-color 0.3s;
+    transform: scale(1.05);
+}
+form a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.0em;
+}
+form p{
+    margin-left: 120px;
+}
+@media(max-width:768px){
+    .container{
+        width: 90%;
+        margin-left: 20px;
+        margin-top: 200px;
+    }
+  form{
+      font-size: 14px;
+  }
+  form input{
+      font-size: 14px;
+  }
+  form button{
+      font-size: 14px;
+        width: 50%;
+  }
+  form a{
+      font-size: 10px;
+  }
+  form p{
+      font-size: 10px;
+      margin-left: 25px;
+  }
+}
