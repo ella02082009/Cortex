@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function(){
         const passwordValue = passwordInput.value.trim();
 
         if(emailValue !== '' && passwordValue !== ''){
-            windows.location.href = 'homepaeg.html';
+            window.location.href = 'homepaeg.html';
         }else{
             alert('Please fill out both the email and password fields.');
         }
