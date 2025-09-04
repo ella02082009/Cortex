@@ -1,20 +1,14 @@
 document.addEventListener('DOMContentLoaded', function(){
-    const signInPage = document.getElementById('signInPage');
+    const signInLink = document.getElementById('signInLink');
+    const emailInput = document.getElementById('email');
+    const passwordInput = document.getElementById('password');
 
-    signInPage.addEventListener('submit', function(event){
+    signInLink.addEventListener('click', function(event){
+       if(emailInput.value.trim() === '' || passwordInput.value.trim() === ''){
         event.preventDefault();
 
-        const emailInput = signInPage.querySelector('input[type="text"]');
-        const passwordInput = signInPage.querySelector('input[type="password"]');
-
-        const emailValue = emailInput.value.trim();
-        const passwordValue = passwordInput.value.trim();
-
-        if(emailValue !== '' && passwordValue !== ''){
-            window.location.href = 'homepaeg.html';
-        }else{
-            alert('Please fill out both the email and password fields.');
-        }
-
+        alert('Please fill out both the email and password fields.');
+       }
     });
 });
+
